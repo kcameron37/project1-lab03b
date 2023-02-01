@@ -107,6 +107,35 @@ h1 {
   text-align: center;
  } 
 
+ .header-container {
+  display: flex;
+ }
+
+ .row {
+  border: 10px solid green;
+  width: 85vw;
+  max-width: 70rem;
+  margin: 0 auto;
+ }
+
+ /* Small only mobile */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up tablet*/
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and
+(max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only desktop */
+@media screen and (min-width: 64em) and
+(max-width: 74.9375em) {}
+
+
  
 /* ==========================================================================
    MODULES 
