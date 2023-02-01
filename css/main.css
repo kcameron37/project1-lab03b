@@ -125,8 +125,15 @@ h1 {
 @media screen and (min-width: 40em) {}
 
 /* Medium only */
-@media screen and (min-width: 40em) and
-(max-width: 63.9375em) {}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+  .row, .main-things-we-do {
+  border: 10px solid green;
+  width: 85vw;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+}
+
 
 /* Large and up */
 @media screen and (min-width: 64em) {}
