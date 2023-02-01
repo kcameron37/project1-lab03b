@@ -111,7 +111,7 @@ h1 {
   display: flex;
  }
 
- .row {
+ .row, .main-things-we-do {
   border: 10px solid green;
   width: 85vw;
   max-width: 70rem;
