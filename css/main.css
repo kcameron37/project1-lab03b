@@ -132,6 +132,11 @@ h1 {
 @media screen and (min-width: 64em) and
 (max-width: 74.9375em) {}
 
+footer {
+  background-color: rgb(21, 21, 55);
+  color: white;
+}
+
 
  
 /* ==========================================================================
