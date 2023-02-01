@@ -107,12 +107,7 @@ h1 {
   text-align: center;
  } 
 
- .header-container {
-  display: flex;
- }
-
-
-
+ 
  /* Small only mobile */
 @media screen and (max-width: 39.9375em) {}
 
