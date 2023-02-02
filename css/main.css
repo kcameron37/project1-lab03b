@@ -1,3 +1,4 @@
+/* General */
 
 div, main, section, footer, header {
   outline: 1px solid #ccc;
@@ -16,7 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul {
   font-family: 'Lexend Deca', sans-serif;
+  font-weight: 100;
+  font-size: 0.6rem;
+  margin: 0;
   list-style-type: none;
+  color: #999;
 }
 
 ::-moz-selection {
@@ -38,12 +43,7 @@ hr {
   padding: 0;
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
   vertical-align: middle;
 }
 
@@ -60,6 +60,10 @@ textarea {
 img {
   width: 100%
 }
+
+/* ----------------------------------------------------------- */
+
+/* Header */
 
 .header {
   padding-bottom: 0rem;
@@ -129,20 +133,112 @@ li {
   padding: 1rem;
 }
 
+/* ----------------------------------------------------------- */
+
+/* Page Slider */
+
 .page-slider, .row {
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
 
-.main-h1 {
+/* ----------------------------------------------------------- */
+
+/* Page Intro */
+
+.page-intro {
   text-align: center;
   font-size: 0.8rem;
 }
 
-.main-h1-span {
+.page-intro-span {
   color: #54ACDA;
 }
 
+/* ----------------------------------------------------------- */
+
+/* Things That We Do */
+
+.things {
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.things-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  grid-area: a;
+}
+
+.things-icon {
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solutions {
+  outline: 0.1rem solid #F4BC41;
+  color: #F4BC41;
+  width: 1rem;
+}
+
+.photography {
+  outline: 0.1rem solid #5EBF8D;
+  color: #5EBF8D;
+  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.development {
+  outline: 0.1rem solid #CE6966;
+  color: #CE6966;
+  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.design {
+  outline: 0.1rem solid #336A9D;
+  color:#336A9D;
+  padding: 0.7rem;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.things-text {
+  padding: 0 0 0 1rem;
+}
+
+.column {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:
+  "a" 1fr
+  "b" 1fr
+  "c" 1fr
+  "d" 1fr
+  "e" 1fr;
+}
+
+.things-solutions {
+  grid-area: b;
+}
+
+.things-photography {
+  grid-area: c;
+}
+
+.things-development {
+  grid-area: d;
+}
+
+.things-design {
+  grid-area: e;
+}
 
  /* Small only mobile */
 @media screen and (max-width: 39.9375em) {
@@ -176,6 +272,32 @@ li {
   h1 {
     padding: 0 5rem 0 5rem;
   }
+
+  .column {
+    grid-template:
+    "a a" 0.5fr
+    "b c" 1fr
+    "d e" 1fr;
+  }
+
+  .things {
+    flex-direction: column;
+    padding: 0 3.5rem 0 3.5rem;
+  }
+
+  .things-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .things-icon {
+    align-self: center;
+  }
+
+  h3 {
+    margin: 1rem;
+  }
+
 }
 
 /* Large only desktop */
@@ -190,6 +312,23 @@ li {
 
   h1 {
     font-size: 2rem;
+  }
+
+  .column {
+    grid-template:
+    "a a a a" 0.5fr
+    "b c d e" 1fr;
+    grid-gap: 0;
+    padding: 0 15rem 0 15rem;
+  }
+
+  .things {
+    padding: 0;
+    align-items: center;
+  }
+
+  .things-text {
+    width: 13rem;
   }
 
 }
