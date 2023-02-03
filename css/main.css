@@ -240,6 +240,26 @@ li {
   grid-area: e;
 }
 
+/* ----------------------------------------------------------- */
+
+/* Whats up lately */
+
+.main-whats-up-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading  {
+      display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: a;
+} 
+/* ----------------------------------------------------------- */
+
+/* Responsiveness */
+
+
  /* Small only mobile */
 @media screen and (max-width: 39.9375em) {
   .header-nav {
@@ -298,6 +318,16 @@ li {
     margin: 1rem;
   }
 
+  .row {
+    display: grid;
+    width: 85wv;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Large only desktop */
