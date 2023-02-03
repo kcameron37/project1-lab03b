@@ -361,6 +361,19 @@ li {
     width: 13rem;
   }
 
+  .row {
+    display: grid;
+    width: 85wv;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .col-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+.main-latest-projects-banner-2{
+  display: none;
+}
 }
 
 footer {
