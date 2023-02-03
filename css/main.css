@@ -255,6 +255,44 @@ li {
     text-align: center;
     grid-area: a;
 } 
+
+.web-solutions {
+  display: flex;
+  flex-direction: row;
+}
+
+.web-solutions {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  justify-content: center;
+  background-color: #54ACDA;
+  color: white;
+    width: 85wv;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+  .accordion-menu, .tab-box, .sponsors {
+  width: 85wv;
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+ 
+  
+  }
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-box{
+  display: flex;
+  flex-direction: column;
+}
+
+}
 /* ----------------------------------------------------------- */
 
 /* Responsiveness */
@@ -275,6 +313,10 @@ li {
   }
 
   .page-slider {
+    display: none;
+  }
+
+  .things-of-above {
     display: none;
   }
 }
@@ -352,6 +394,7 @@ li {
     padding: 0 15rem 0 15rem;
   }
 
+ 
   .things {
     padding: 0;
     align-items: center;
