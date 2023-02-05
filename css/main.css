@@ -374,6 +374,14 @@ li {
 
 /* Large only desktop */
 @media screen and (min-width: 64em) {
+  .bottom-container-accordion{
+    display: flex;
+    flex-direction: row;
+    width: 85wv;
+    max-width: 70rem;
+    margin: 0 auto;
+
+  }
 
 
   .header-container {
