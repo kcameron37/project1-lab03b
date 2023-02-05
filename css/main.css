@@ -280,13 +280,25 @@ li {
   max-width: 70rem;
   margin: 0 auto;
   display: flex;
+  }
+
+  .accordion-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    border: 1px solid gray;
+  }
  
   
-  }
+  
 .tabs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid gray;
 }
 
 .tab-box{
@@ -304,10 +316,12 @@ li {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+ 
     }
 
   .accordion-menu {
     display: flex;
+    border: 1px solid gray;
 
   }
 .fa-react {
@@ -352,6 +366,10 @@ i {
 
  /* Small only mobile */
 @media screen and (max-width: 39.9375em) {
+.flicker-Photos, .footer-newsletter{
+  display: none;
+}
+
   .header-nav {
     display: none;
   }
@@ -375,6 +393,10 @@ i {
 
 /* Medium and up tablet*/
 @media screen and (min-width: 40em) { 
+  .col-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .header-container, .row {
     padding: 0 4rem 0 4rem;
   }
@@ -422,6 +444,7 @@ i {
   .col-2 {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 /* Large only desktop */
@@ -433,6 +456,10 @@ i {
     max-width: 70rem;
     margin: 0 auto;
 
+  }
+
+  .col-3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 
