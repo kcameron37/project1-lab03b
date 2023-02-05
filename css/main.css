@@ -366,7 +366,7 @@ i {
 
  /* Small only mobile */
 @media screen and (max-width: 39.9375em) {
-.flicker-Photos, .footer-newsletter{
+.flicker-Photos, .footer-newsletter, .about-us-text{
   display: none;
 }
 
